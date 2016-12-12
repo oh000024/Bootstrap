@@ -66,9 +66,8 @@ p {
 	width: 33%;
 	float: left;
 	display: inline;
-	min-width: 220px;
+	min-width: 200px;
 	min-height: 300px;
-	max-width: 250px;
 /*	overflow: hidden;*/
 }
 

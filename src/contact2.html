@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Geen Earth Association</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../css/iconic-bootstrap.css">
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	
+    <style>
+/*
+      html { height: 100% }
+      body { height: 100%; background-color:#CCC }
+*/
+      #map-outer {height: 440px; padding: 20px; border: 2px solid #CCC; margin-bottom: 20px; background-color:black}
+	  #map-container { height: 400px }
+	  @media all and (max-width: 991px) {
+		#map-outer  { height: 450px }
+		}
+    </style>	
+	
+</head>
+
+<body>
+	<!--	<nav class="navbar navbar-light bg-faded">-->
+	<nav class="navbar navbar-dark bg-inverse" style="background-color: #e3f2fd;">
+		<a class="navbar-brand" href="#"><img src="img/pgicon.png" width="30" height="30" class="d-inline-block align-top" alt="">WPAOPB</a>
+		<button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+			&#9776;
+		</button>
+		<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+
+			<ul class="nav navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only" style="color:white;">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="help.html">Things You Can Do</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact2.html">Contact2</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+  <div class="container">
+  <div class="row">
+      <div id="map-outer" class="col-md-12">
+          <div id="address" class="col-md-4">
+            <h2>Our Location</h2>
+            <address>
+            <strong>Winnipec</strong><br>
+                Churchil, 44566-3<br>
+                30123<br>
+                Basdfasdf<br>
+                
+                <abbr>P:</abbr> +01 021 550 5451
+           </address>
+          </div>
+        <div id="map-container" class="col-md-8"></div>
+      </div><!-- /map-outer -->
+  </div> <!-- /row -->
+
+  <div class="row">
+  <form class="form-horizontal" name="commentform">
+    <div class="form-group">
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+        </div>
+        <div class="col-md-4 input-group">
+        <span class="input-group-addon">@</span>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-6">
+            <button type="submit" value="Submit" class="btn btn-warning pull-right">Send</button>
+        </div>
+    </div>
+</form>
+</div><!-- /row -->
+</div><!-- /container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>	
+	
+      function init_map() {
+		var myLocation = new google.maps.LatLng(45.430817,12.331516);
+		  
+        var mapOptions = {
+          center: myLocation,
+          zoom: 14
+        };
+		
+		var marker = new google.maps.Marker({
+			position: myLocation,
+			title:"Peggy Guggenheim Collection"});
+			
+        var map = new google.maps.Map(document.getElementById("map-container"),
+            mapOptions);
+		
+		marker.setMap(map);	
+
+      }
+	  
+      google.maps.event.addDomListener(window, 'load', init_map);
+	  
+    </script>
+
+
+	<hr style="border:1px solid white ;">
+	<footer>
+		<div class="text-center">
+			<span class="iconic iconic-social-twitter iconic-md" title="social twitter" aria-hidden="true"></span>
+			<span class="iconic iconic-social-facebook iconic-md" title="social twitter" aria-hidden="true"></span>
+			<span class="iconic iconic-social-instagram iconic-md" title="social twitter" aria-hidden="true"></span>
+		</div>
+
+		<p>&copy; Manitoba Protection Association of Polar Bear 2016</p>
+	</footer>
+
+
+</body>
+
+</html>
