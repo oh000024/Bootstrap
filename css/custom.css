@@ -99,9 +99,6 @@ p {
 }
 */
 
-.map{
-	width :100%; 
-}
 
 
 a {
@@ -131,5 +128,14 @@ a {
 }
 
 #mapid{
+	max-width: 100%;
+}
+#mapid> img{
 	width: 100%;
+}
+body > .container-fluid {
+	padding: 60px 15px 0;
+}
+label{
+	color:aliceblue;
 }

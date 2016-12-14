@@ -51,12 +51,83 @@
 
 	<!-- Begin page content -->
 
+	<div class="container-fluid">
+
+
+
+		<!-- Example row of columns -->
+		<div class="row">
+			<!--			<div class="col-md-6">-->
+			<div class="col-sm-12 col-md-6" id="mapid"> <img src="https://maps.googleapis.com/maps/api/staticmap?center=city hall, toronto, On &zoom=13&size=800x550&maptype=roadmap
+&markers=color:red%7Clabel:C%7C43.654693, -79.383660
+&key=AIzaSyCQwC2L4edKBbETKUXvuU7VgyvhWSHNr6M" alt="Location of the company"> </div>
+			<!--			</div>-->
+
+		
+		
+		
+<!--		https://www.google.ca/maps/place/452+Brettonwood+Ridge,+Kanata,+ON+K2T+0H8/@45.3024283,-75.9367162,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2006093fa2fe9:0xd7f396bb23345786!8m2!3d45.302425!4d-75.934519-->
+<!--		https://www.google.ca/maps/place/452+Brettonwood+Ridge,+Kanata,+ON+K2T+0H8/@45.3024283,-75.9367162,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2006093fa2fe9:0xd7f396bb23345786!8m2!3d45.302425!4d-75.934519-->
+		
+			<div class="col-sm-12 col-md-6">
+				<form class="form-inline">
+
+					<div class="form-group">
+
+						<label for="exampleInputName2">First Name</label>
+
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="Cristiano"> </div>
+
+					<div class="form-group">
+
+						<label for="exampleInputEmail2">Last Name</label>
+
+						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Ronaldo"> </div>
+				</form>
+
+				<form>
+
+					<div class="form-group">
+
+						<label for="exampleInputEmail1">Email address</label>
+
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
+
+					<div class="form-group">
+
+						<label for="exampleInputPhone">Phone Number (Optional)</label>
+
+						<input type="phone" class="form-control" id="exampleInputPhone" placeholder="Enter your phone number"> </div>
+
+					<div class="form-group">
+
+						<label for="exampleTextarea">Leave us a message</label>
+
+						<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+					</div>
+
+					<div class="form-group">
+
+						<label for="exampleInputFile">Send us pictures</label>
+
+						<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"> <small id="fileHelp" class="form-text text-muted">You can provide us some pictures you took about Climate Change</small> </div>
+
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--
 <div class="container-fluid">
 	<div class="row pair">
 	
 		<div class="col-sm-12 col-md-5" id="mapid"> <img src="https://maps.googleapis.com/maps/api/staticmap?center=city hall, ottawa, On &zoom=13&size=800x550&maptype=roadmap
 &markers=color:red%7Clabel:C%7C45.4063233,-75.6890449
-&key=AIzaSyByJ2tPW1R7vlqjPDai5Cgh7ujKgjKbhf0" alt="Location of the company"> </div>
+&key=AIzaSyCQwC2L4edKBbETKUXvuU7VgyvhWSHNr6M" alt="Location of the company"> </div>
 	
 		<div class="col-sm-12 col-md-5" id="contact-form">
 		
@@ -77,7 +148,7 @@
 				</form>
 		
 			<form>
-			
+	
 				<div class="form-group">
 				
 					<label for="exampleInputEmail1">Email address</label>
@@ -109,6 +180,7 @@
 		</div>
 	</div>
 
+-->
 
 	<footer class="footer">
 		<div class="container">
@@ -122,43 +194,6 @@
 	</footer>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-	<!--
-	<script>
-		window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-	</script>
--->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<!--	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
-	<!--	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Ni9HMAcmbh64CZmKFRZhNpvCWFmTUvA&callback=init_map" async defer></script>-->
-	<script>
-		function init_map() {
-			//			58.7599928,-94.1914323,12z
-			var myLocation = new google.maps.LatLng(58.688478, -93.8700365, 12);
-			//			var myLocation = new google.maps.LatLng(45.430817, 12.331516);
-
-			var mapOptions = {
-				center: myLocation,
-				zoom: 14
-			};
-
-			var marker = new google.maps.Marker({
-				position: myLocation,
-				title: "Peggy Guggenheim Collection"
-			});
-
-			var map = new google.maps.Map(document.getElementById("map-container"),
-				mapOptions);
-
-			marker.setMap(map);
-
-		}
-
-		//			google.maps.event.addDomListener(window, 'load', init_map);
-	</script>
 </body>
 
 </html>
